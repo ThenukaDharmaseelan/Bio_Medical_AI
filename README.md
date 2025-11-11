@@ -1,9 +1,9 @@
-#🫀 Embryonic Medaka Fish Cardiac Analysis
+# 🫀 Embryonic Medaka Fish Cardiac Analysis
 
-##📋 Project Overview
+## 📋 Project Overview
 This project implements a comprehensive cardiac analysis pipeline for embryonic medaka fish, developed as part of the Biomedical and Health AI Scientist (KTP Associate) Interview Task for Hurdle.bio. The system processes time series TIFF images to detect cardiac regions and estimate heart rate using classical computer vision and signal processing techniques.
 
-##🎯 Objectives
+## 🎯 Objectives
 Temporal Analysis: Process 130 sequential frames with precise timing information
 
 Embryo Detection: Automatically identify and isolate the embryonic region using Hough Circle Transform
