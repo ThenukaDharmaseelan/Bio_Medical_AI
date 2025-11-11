@@ -47,8 +47,18 @@ Bio_Medical/
 └── README.md                      # Project documentation
 
 ## ⚙️ Installation & Setup
-### Environment Setup
-<pre> ```bash # Create and activate virtual environment python -m venv venv # For macOS/Linux source venv/bin/activate # For Windows venv\Scripts\activate ``` </pre>
+
+### 1. Environment Setup
+```bash
+# Create and activate virtual environment
+python -m venv venv
+
+# For macOS/Linux
+source venv/bin/activate  
+
+# For Windows
+venv\Scripts\activate
+
 
 
 
