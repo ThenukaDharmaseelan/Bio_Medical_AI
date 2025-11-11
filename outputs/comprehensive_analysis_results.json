@@ -1,0 +1,39 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-11-10T01:35:08.395080",
+    "total_frames_analyzed": 130,
+    "frame_rate_fps": 12.887112887112888,
+    "total_duration_seconds": 10.01,
+    "recording_fps": 12.887112887112888
+  },
+  "embryo_detection": {
+    "center_x": 1171,
+    "center_y": 956,
+    "radius_pixels": 198,
+    "roi_width": 396,
+    "roi_height": 396
+  },
+  "heart_detection": {
+    "heart_center_x": 158,
+    "heart_center_y": 21,
+    "region_size_pixels": 37,
+    "detection_method": "mean_2std",
+    "total_candidate_regions": 12
+  },
+  "cardiac_analysis": {
+    "heart_rate_fft_bpm": 166.54115115653576,
+    "heart_rate_peaks_bpm": 169.7327063180722,
+    "final_heart_rate_bpm": 168.13692873730398,
+    "dominant_frequency_hz": 2.7756858526089294,
+    "beats_detected": 28,
+    "mean_inter_beat_interval": 0.35349698535745044,
+    "heart_rate_variability_percent": 26.269096620168312,
+    "validation_status": "VALID"
+  },
+  "signal_quality": {
+    "cardiac_signal_range": 4.0000000000000036,
+    "global_motion_range": 0.09318564432200793,
+    "signal_to_noise_ratio": 0.7885712824956145,
+    "recording_quality": "GOOD"
+  }
+}

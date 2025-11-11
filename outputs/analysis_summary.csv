@@ -1,0 +1,2 @@
+total_frames,duration_seconds,frame_rate_fps,heart_rate_bpm,heart_location_x,heart_location_y,beats_detected,validation_status,analysis_timestamp
+130,10.01,12.887112887112888,168.13692873730398,158,21,28,VALID,2025-11-10T01:35:08.396812
