@@ -37,6 +37,8 @@ Comprehensive Outputs: Generates frames, signals, and analysis reports
 
 ## 📁 Project Structure
 
+## 📁 Project Structure
+```text
 Bio_Medical/
 ├── Heart_Detection.ipynb          # Main analysis notebook
 ├── rawTiff/                       # Input TIFF image sequence (130 frames)
@@ -45,7 +47,7 @@ Bio_Medical/
 │   └── signals/                   # Extracted cardiac signals
 ├── requirements.txt               # Python dependencies
 └── README.md                      # Project documentation
-
+````
 ## ⚙️ Installation & Setup
 
 ### 1. Environment Setup
@@ -113,7 +115,29 @@ Generates comprehensive visualizations
 Produces heart rate estimates and analysis metrics
 
 
+## 📊 Key Results
+### Temporal Analysis
+Total Frames: 130
 
+Frame Rate: 12.89 fps
+
+Duration: 10.01 seconds
+
+T-value Range: 15372985 to 15382995
+
+### Embryo Detection
+Detection Method: Hough Circle Transform
+
+Center Coordinates: (1138, 986)
+
+Radius: 233 pixels
+
+Circular Regions Detected: 2
+
+### Signal Processing
+Analysis Methods: FFT, Butterworth filtering, peak detection
+
+Output: Heart rate estimation with confidence metrics
 
 
 
