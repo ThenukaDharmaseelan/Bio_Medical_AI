@@ -45,7 +45,6 @@ Bio_Medical/
 ├── outputs/                       # Generated analysis outputs
 │   ├── frames/                    # Processed frame visualizations
 │   └── signals/                   # Extracted cardiac signals
-├── requirements.txt               # Python dependencies
 └── README.md                      # Project documentation
 ````
 ## ⚙️ Installation & Setup
@@ -59,19 +58,14 @@ source venv/bin/activate
 # For Windows
 venv\Scripts\activate
 ````
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-````
+
 ### Required Packages:
 ```bash
-opencv-python==4.8.1.78
-numpy==1.24.3
-scipy==1.10.1
-matplotlib==3.7.1
-scikit-image==0.21.0
-pandas==2.0.3
-tqdm==4.65.0
+opencv-python==4.9.0
+numpy==1.26.4
+scipy==1.15.3
+matplotlib==3.10.0
+pandas==2.3.1
 ````
 ### 3. Data Preparation
 Place TIFF image sequence in rawTiff/ directory with naming convention: *--T[timestamp]*.tif
@@ -123,7 +117,7 @@ Frame Rate: 12.89 fps
 
 Duration: 10.01 seconds
 
-T-value Range: 15372985 to 15382995
+T value Range: 15372985 to 15382995
 
 ### Embryo Detection
 Detection Method: Hough Circle Transform
@@ -138,6 +132,40 @@ Circular Regions Detected: 2
 Analysis Methods: FFT, Butterworth filtering, peak detection
 
 Output: Heart rate estimation with confidence metrics
+
+## 🔬 Technical Details
+### Image Processing Pipeline
+Preprocessing: Median blur (kernel=5) + CLAHE enhancement
+
+Embryo Localization: Hough Circle Transform with optimized parameters
+
+Cardiac Region Identification: Intensity-based segmentation
+
+Temporal Tracking: Frame-by-frame intensity variation analysis
+
+Signal Analysis: FFT transformation and frequency domain analysis
+
+### Signal Analysis Methods
+Detrending: Remove slow baseline variations
+
+Filtering: Butterworth bandpass for cardiac frequencies
+
+Peak Detection: scipy.signal.find_peaks with prominence thresholds
+
+Frequency Analysis: FFT for dominant frequency identification
+
+## 📈 Outputs Generated
+Processed Frames: Embryo detection overlays and cardiac region highlights
+
+Signal Plots: Temporal intensity variations and frequency spectra
+
+Analysis Reports: Heart rate estimates and confidence intervals
+
+Visualization: Comprehensive matplotlib plots for result validation
+
+
+
+
 
 
 
