@@ -52,12 +52,65 @@ Bio_Medical/
 ```bash
 # Create and activate virtual environment
 python -m venv venv
-
 # For macOS/Linux
 source venv/bin/activate  
-
 # For Windows
 venv\Scripts\activate
+````
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+````
+### Required Packages:
+```bash
+opencv-python==4.8.1.78
+numpy==1.24.3
+scipy==1.10.1
+matplotlib==3.7.1
+scikit-image==0.21.0
+pandas==2.0.3
+tqdm==4.65.0
+````
+### 3. Data Preparation
+Place TIFF image sequence in rawTiff/ directory with naming convention: *--T[timestamp]*.tif
+
+## 🚀 Usage
+```bash
+jupyter notebook Heart_Detection.ipynb
+````
+
+## Pipeline Steps
+### 1. Frame Loading & Temporal Analysis
+
+Loads 130 sequential frames
+
+Extracts timing from filenames (T-values)
+
+Calculates frame rate (12.89 fps) and total duration (10.01 seconds)
+
+### 2. Embryo Detection
+
+Applies median blur and CLAHE enhancement
+
+Uses Hough Circle Transform for automatic detection
+
+Identifies embryo center at (1138, 986) with 233px radius
+
+### 3. Cardiac Analysis
+
+Processes cardiac region across all frames
+
+Extracts intensity signals for heart rate calculation
+
+Implements signal filtering and peak detection
+
+### 4. Output Generation
+
+Saves processed frames and signals
+
+Generates comprehensive visualizations
+
+Produces heart rate estimates and analysis metrics
 
 
 
