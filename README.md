@@ -36,8 +36,6 @@ Signal Analysis: Implements detrending, filtering, and frequency domain analysis
 Comprehensive Outputs: Generates frames, signals, and analysis reports
 
 ## 📁 Project Structure
-
-## 📁 Project Structure
 ```text
 Bio_Medical/
 ├── Heart_Detection.ipynb          # Main analysis notebook
